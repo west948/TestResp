@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+div.wrapper_tripleBlocks {
+  height: 170px;
+  display: flex;
+}
+
+div.wrapper_halfScreen {
+  height: 250px;
+  display: flex;
+}
+
+div.wrapper_halfScreen_left {
+  display: flex;
+  flex-direction: column;
+}
+
+div.wrapper_halfScreen_left_top {
+  height: 70px;
+  display: flex;
+}
+
+/*---------------------------------------------*/
+div.wrapper_tripleBlocks__one {
+  width: 150px;
+  background-color: chocolate;
+}
+
+div.wrapper_tripleBlocks__two {
+  flex: 1 1 auto;
+  background-color: cornflowerblue;
+}
+
+div.wrapper_tripleBlocks__three {
+  width: 150px;
+  background-color: burlywood;
+}
+
+/*---------------------------------------------*/
+div.wrapper_halfScreen_left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+div.wrapper_halfScreen__right {
+  width: 50%;
+  background-color: crimson;
+}
+
+/*---------------*/
+div.wrapper_halfScreen_left_top {
+  height: 70px;
+}
+
+div.wrapper_halfScreen_left_top__left {
+  width: 60%;
+  background-color: darkturquoise;
+}
+
+div.wrapper_halfScreen_left_top__right {
+  width: 40%;
+  background-color: dodgerblue;
+}
+
+div.wrapper_halfScreen_left__bottom {
+  background-color: goldenrod;
+  flex: 1 1 100%;
+}
+
+/*----MEDIA QUERY-----------------------------*/
+@media (max-width: 1024px) {
+  div.wrapper_tripleBlocks__three {
+    display: none;
+  }
+}
+@media (max-width: 768px) and (min-width: 320px) {
+  div.wrapper_tripleBlocks {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  div.wrapper_tripleBlocks__one {
+    height: 170px;
+    width: 100%;
+  }
+
+  div.wrapper_tripleBlocks__two {
+    height: 170px;
+    width: 100%;
+  }
+
+  div.wrapper_tripleBlocks__three {
+    display: block;
+    height: 170px;
+    width: 100%;
+  }
+
+  div.wrapper_halfScreen {
+    flex-direction: column;
+    height: auto;
+  }
+
+  div.wrapper_halfScreen_left {
+    height: 250px;
+    width: 100%;
+  }
+
+  div.wrapper_halfScreen__right {
+    height: 250px;
+    width: 100%;
+  }
+
+  div.wrapper_halfScreen_left_top {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  div.wrapper_halfScreen_left_top__left {
+    width: 100%;
+    height: 70px;
+  }
+
+  div.wrapper_halfScreen_left_top__right {
+    width: 100%;
+    height: 70px;
+  }
+}
